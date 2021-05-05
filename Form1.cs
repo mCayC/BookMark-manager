@@ -17,5 +17,16 @@ namespace Bookmarks
             InitializeComponent();
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AddButton_Click(object sender, EventArgs e)
+        {
+            Button t = new Button();
+            t.Text = "test";
+            LinkList.Controls.Add(t);
+        }
     }
 }
