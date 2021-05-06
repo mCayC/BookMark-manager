@@ -25,8 +25,15 @@ namespace Bookmarks
         private void AddButton_Click(object sender, EventArgs e)
         {
             Button t = new Button();
-            t.Text = "test";
+            t.Width = 240;
+            t.Text = textBox1.Text;
+            t.Click += new EventHandler((send,e)=>ClickLink(t.Text));
             LinkList.Controls.Add(t);
+        }
+
+        private void ClickLink(string text)
+        {
+            textBox2.Text = text;
         }
     }
 }
